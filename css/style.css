@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    background-image: linear-gradient(to right, rgb(17, 33, 98), rgb(3, 3, 35));
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left: 3rem;
+    color: white;
+}
+
+.logo a span {
+    color: rgb(54, 54, 219);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+nav ul li a:hover {
+    color: rgb(46, 38, 38);
+}
+
+nav ul li form input {
+    padding: 9px 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+nav ul li form button {
+    padding: 9px 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: white;
+    background-image: linear-gradient(to left, rgb(19, 57, 211), rgb(20, 20, 80));
+    border: 1px solid rgb(17, 33, 98);
+
+}
+
+nav ul li form button:hover {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+nav .menu-icon {
+    color: white;
+    font-size: 2rem;
+    border: 1px solid white;
+    padding: 0 10px;
+    border-radius: 4px;
+    margin-right: 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+.showMenu {
+    height: 50vh;
+}
+
+.container {
+    background-image: linear-gradient(rgba(2, 2, 24, 0.5), rgba(66, 84, 251, 0.5)), url(/bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color-dodge;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    color: white;
+    padding: 15rem 0;
+}
+
+.left h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.left p {
+    font-size: 1.3rem;
+    line-height: 40px;
+    margin-bottom: 1rem;
+}
+
+.right img {
+    width: 200px;
+    border-radius: 50%;
+
+}
+
+.buttons button {
+    padding: 9px 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.buttons button:hover {
+    color: black;
+    background-color: #fff;
+}
+
+.blog {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin: 2rem auto;
+    border-bottom: 1px solid black;
+    padding: 1rem 0;
+
+}
+
+.blogImg {
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+.blogImg img {
+    width: 350px;
+}
+
+.blogInfo h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.blogInfo p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(rgba(2, 2, 24, 0.5), rgba(66, 84, 251, 0.5)), url(/bg.webp);
+    color: white;
+    flex-direction: column;
+    padding: 3rem 0;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background: transparent;
+}
+
+.contact form input, .contact form textarea {
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 17px 1rem;
+    color: white;
+    border-radius: 4px;
+    margin: 1rem 0;
+    outline: none;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+footer {
+    background-image: linear-gradient(to left, rgb(19, 57, 211), rgb(20, 20, 80));
+
+}
+
+footer .footer p {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.contact form button {
+    padding: 17px 20px;
+    width: 50%;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    transition: all 0.5s;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.contact form button:hover {
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width:920px) {
+    .blog {
+        flex-direction: column;
+    }
+
+    .blogImg {
+        display: flex;
+        justify-content: center;
+    }
+    .blogImg img{
+        width: 70%;
+    }
+    .blog2{
+        flex-direction: column !important;
+    }
+    .blogInfo h2{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:840px) {
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        background-image: linear-gradient(to right, rgb(17, 33, 98), rgb(3, 3, 35));
+        height: 0vh;
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        margin: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 1.4rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input {
+        margin-bottom: 1rem;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+    }
+
+    .left {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .left h1 {
+        font-size: 2rem !important;
+    }
+    .blogImg img{
+        width: 94% !important;
+    }
+    .contact form button{
+        width: 100% !important;
+    }
+}
