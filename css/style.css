@@ -1,8 +1,23 @@
+@import url(//db.onlinewebfonts.com/c/0c5e6f133b0b25edfed47aca4ab57676?family=Segoe+UI+Historic);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Segoe UI Historic", sans-serif;
+}
+
+ 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:darkmagenta;
+}
+
+::-webkit-scrollbar-track{
+    background:#dddddd;
 }
 
 nav {
